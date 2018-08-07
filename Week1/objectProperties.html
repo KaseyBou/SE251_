@@ -1,0 +1,66 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<title>Level 0 Boss Challenge</title>
+		<meta charset="UTF-8"/>
+			<meta name="description" content="Level 0">
+			<meta name="keywords" content="Level 0, Game Prototyping, New England Institute of Technology">
+			<meta name="author" content="John Doe">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript">
+		
+			var a = "Kasey";
+			var b = 5;
+			var c = true;
+			var d;
+			var e;
+
+			console.log(typeof a);
+			console.log(typeof b);
+			console.log(typeof c);
+			
+			function add(d, e){
+				return d + e;
+			}
+			
+			console.log("5 + 5 = " + add(5,5));
+
+			var myArray = new Array(100);
+
+			for(i = 0; i < 100;i++){
+				
+				var temp = {index: i + 1, label:undefined}
+				myArray[i] = temp;
+
+				if(myArray[i].index%2 === 0 && myArray[i].index%3 === 0)
+				{
+					myArray[i].label = "fizz buzz";
+				}
+
+				if(myArray[i].index%2 === 0)
+				{
+					myArray[i].label = "fizz";
+				}
+
+				else if (myArray[i].index%3 === 0)
+				{
+					myArray[i].label = "buzz";
+				}
+
+			}
+			
+			for(let i = 0; i < 100;i++)
+			{
+				if(myArray[i].label === "fizz")
+				{
+					console.log(myArray[i]);
+				}
+			}
+			console.log(myArray);
+			
+		</script>
+	</head>
+	<body>
+		<P>Kasey Bourdier</p>
+	</body>
+</html>

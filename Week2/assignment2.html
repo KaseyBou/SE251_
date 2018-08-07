@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		//Use this Array of objects to complete the assignment.
+		var people =[
+			{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+			{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+			{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+			{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+			{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+			{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+			{first:"Marion", last:"Cobretti", credit:"Cobra" }
+		];
+
+		var body = document.getElementsByTagName("body");
+		var message = '';
+
+		for(let i = 0; i < people.length;i++)
+		{
+			message += "<div id='body'" + i + "' class='border'>";
+
+				for(value in people[i])
+				{
+					message += '<p>';
+					message += people[i][value];
+					message += '</p>';
+				}
+			message += '</div>'
+
+		}
+		
+		//Elements is an array so I must include brackets
+		
+		body[0].innerHTML = message;
+
+	</script>
+</body>
+</html>
